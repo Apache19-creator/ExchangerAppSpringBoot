@@ -1,0 +1,25 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${MySQL_DB}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  mail:
+    host: ${SPRING_MAIL_HOST}
+    port: 587
+    username: ${MAIL_LOGIN}
+    password: ${MAIL_PASS}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+heroXchange:
+  app:
+    SecretKey: ${SECRET_KEY}
+    frontend-host: ${FRONTEND_HOST}
